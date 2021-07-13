@@ -1,28 +1,28 @@
 <template>
   <div class="test">
     <div class="row">
-      <div class="col span-1-of-2">
-        <img src="../img/карта2.png" alt="Iphone screen" class="app-screen">
+      <div class="img-cont col span-1-of-2">
+        <img src="../img/карта1.jpeg" alt="" class="">
       </div>
       <div class="col span-1-of-2">
-        <div class="container">
-          <div class="item">
+        <ul class="container">
+          <li class="item">
             <div>100 дней без %</div>
-            <p>на любые покупки</p>
-          </div>
-          <div class="item">
+            <div>на любые покупки</div>
+          </li>
+          <li class="item">
             <div>11,99%</div>
-            <p>минимальная процентная ставка</p>
-          </div>
-          <div class="item">
+            <div>минимальная процентная ставка</div>
+          </li>
+          <li class="item">
             <div>500 000 ₽</div>
-            <p>максимальный кредитный лимит</p>
-          </div>
-          <div class="item">
+            <div>максимальный кредитный лимит</div>
+          </li>
+          <li class="item">
             <div>Бесплатная доставка</div>
-            <p>доставим карту в удобное место и время</p>
-          </div>
-        </div>
+            <div>доставим карту в удобное место и время</div>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -53,20 +53,48 @@ export default {
 
 
 img {
-  width: 80%;
+  width: 70%;
+  margin-left: 10%;
 }
 
 .item {
-  margin: 20px;
-
-  width: 200px;
+  margin-left: 5px;
+  width: calc(50% - 5px);
   height: 100px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 40px 200px 0 0;
+.item div {
+  text-align: left;
 }
+
+.item div:first-child {
+  font-weight: 600;
+  font-size: 130%;
+}
+
+.item div:last-child {
+  width: 80%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 0 0;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+div {
+  display: block;
+}
+
 
 </style>
