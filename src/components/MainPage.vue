@@ -1,24 +1,24 @@
 <template>
-  <div class="test">
+  <div>
     <div class="row">
       <div class="img-cont col span-1-of-2">
-        <img src="../img/карта1.jpeg" alt="" class="">
+        <img src="../img/карта1.jpeg" alt="Изображение карты">
       </div>
       <div class="col span-1-of-2">
-        <ul class="container">
-          <li class="item">
+        <ul class="advantage-container">
+          <li class="advantage-item">
             <div>100 дней без %</div>
             <div>на любые покупки</div>
           </li>
-          <li class="item">
+          <li class="advantage-item">
             <div>11,99%</div>
             <div>минимальная процентная ставка</div>
           </li>
-          <li class="item">
+          <li class="advantage-item">
             <div>500 000 ₽</div>
             <div>максимальный кредитный лимит</div>
           </li>
-          <li class="item">
+          <li class="advantage-item">
             <div>Бесплатная доставка</div>
             <div>доставим карту в удобное место и время</div>
           </li>
@@ -57,26 +57,26 @@ img {
   margin-left: 10%;
 }
 
-.item {
+.advantage-item {
   margin-left: 5px;
   width: calc(50% - 5px);
   height: 100px;
 }
 
-.item div {
+.advantage-item div {
   text-align: left;
 }
 
-.item div:first-child {
+.advantage-item div:first-child {
   font-weight: 600;
   font-size: 130%;
 }
 
-.item div:last-child {
+.advantage-item div:last-child {
   width: 80%;
 }
 
-.container {
+.advantage-container {
   display: flex;
   flex-wrap: wrap;
   margin: 60px 0 0 0;
